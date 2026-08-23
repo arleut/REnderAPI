@@ -26,10 +26,11 @@ REnderAPI aims to provide a simple abstraction over terminal rendering while rem
 The project is being developed primarily for the Redstone OS (RSOS) ecosystem, but REnderAPI is designed to be useful as an independent library.
 
 🚀 Example
-
+```js
 import { Renderer } from "renderapi";
 const renderer = new Renderer();
 renderer.text("Hello, world!");
+```
 
 More examples will be added as the API develops.
 
@@ -37,6 +38,7 @@ More examples will be added as the API develops.
 
 One of the main goals of REnderAPI is to support frame-based animations directly in the terminal.
 
+```js
 const animation = new Flipbook({
     frames: [
         frame1,
@@ -46,6 +48,7 @@ const animation = new Flipbook({
     fps: 30
 });
 await animation.play();
+```
 
 The long-term goal is to make it possible to transform graphical content into terminal-renderable frames.
 
@@ -53,12 +56,14 @@ The long-term goal is to make it possible to transform graphical content into te
 
 REnderAPI is designed around a modular architecture:
 
+```
 REnderAPI
 ├── Core
 ├── Terminal Renderer
 ├── Image Renderer
 ├── Animation System
 └── Flipbook
+```
 
 External libraries may be used internally for tasks such as image decoding, video processing and terminal capabilities.
 
