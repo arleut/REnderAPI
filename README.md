@@ -4,7 +4,6 @@ A rendering API for Node.js terminals.
 
 REnderAPI is an open-source rendering library designed to bring graphics, images, animations and interactive interfaces to the terminal.
 
-The name is a little joke: Render + Ender. 🐉
 
 ✨ Features
 
